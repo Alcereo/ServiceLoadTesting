@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="web-service">
+    <output-path>$PROJECT_DIR$/WebService/war</output-path>
+    <root id="archive" name="web-service.war">
+      <element id="artifact" artifact-name="WebService:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="io.dropwizard.metrics:metrics-core:3.2.1" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

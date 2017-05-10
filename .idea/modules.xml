@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Grafana/Grafana.iml" filepath="$PROJECT_DIR$/Grafana/Grafana.iml" group="Monitoring" />
+      <module fileurl="file://$PROJECT_DIR$/InfluxDB/InfluxDB.iml" filepath="$PROJECT_DIR$/InfluxDB/InfluxDB.iml" group="Influx" />
+      <module fileurl="file://$PROJECT_DIR$/JMX_Exporter/JMX_Exporter.iml" filepath="$PROJECT_DIR$/JMX_Exporter/JMX_Exporter.iml" group="Monitoring" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LoadTesting.iml" filepath="$PROJECT_DIR$/.idea/modules/LoadTesting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Prometheus/Prometheus.iml" filepath="$PROJECT_DIR$/Prometheus/Prometheus.iml" group="Monitoring" />
+      <module fileurl="file://$PROJECT_DIR$/WebService/WebService.iml" filepath="$PROJECT_DIR$/WebService/WebService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JMX_exp_repo/collector/collector.iml" filepath="$PROJECT_DIR$/JMX_exp_repo/collector/collector.iml" group="Prometheus" />
+      <module fileurl="file://$PROJECT_DIR$/jmxTrance/jmxTrance.iml" filepath="$PROJECT_DIR$/jmxTrance/jmxTrance.iml" group="Influx" />
+      <module fileurl="file://$PROJECT_DIR$/JMX_exp_repo/jmx_prometheus_httpserver/jmx_prometheus_httpserver.iml" filepath="$PROJECT_DIR$/JMX_exp_repo/jmx_prometheus_httpserver/jmx_prometheus_httpserver.iml" group="Prometheus" />
+      <module fileurl="file://$PROJECT_DIR$/JMX_exp_repo/jmx_prometheus_javaagent/jmx_prometheus_javaagent.iml" filepath="$PROJECT_DIR$/JMX_exp_repo/jmx_prometheus_javaagent/jmx_prometheus_javaagent.iml" group="Prometheus" />
+      <module fileurl="file://$PROJECT_DIR$/JMX_exp_repo/parent.iml" filepath="$PROJECT_DIR$/JMX_exp_repo/parent.iml" group="Prometheus" />
+    </modules>
+  </component>
+</project>

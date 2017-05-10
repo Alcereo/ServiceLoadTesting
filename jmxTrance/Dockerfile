@@ -1,0 +1,2 @@
+FROM jmxtrans/jmxtrans
+

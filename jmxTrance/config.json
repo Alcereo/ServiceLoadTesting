@@ -1,0 +1,33 @@
+{
+  "servers" : [ {
+    "url": "service:jmx:remote+http://localhost:9990",
+    "protocolProviderPackages" : "org.jboss.remotingjmx.RemotingConnectorProvider",
+    "username" : "admin",
+    "password" : "admin",
+    "numQueryThreads": 2,
+    "queries" : [ {
+      "obj" : "java.lang:type=Memory",
+      "attr" : [ "HeapMemoryUsage", "NonHeapMemoryUsage" ],
+      "resultAlias":"jvmMemory",
+      "outputWriters" : [ {
+        "@class" : "com.googlecode.jmxtrans.model.output.InfluxDbWriterFactory",
+        "url" : "http://localhost:8086/",
+        "username" : "admin",
+        "password" : "admin",
+        "database" : "jmxDB"
+      } ]
+    }, {
+      "obj" : "metrics:name=requests",
+      "attr" : [ "FifteenMinuteRate", "FiveMinuteRate", "MeanRate", "OneMinuteRate","Count"],
+      "resultAlias":"requests",
+      "outputWriters" : [ {
+        "@class" : "com.googlecode.jmxtrans.model.output.InfluxDbWriterFactory",
+        "url" : "http://localhost:8086/",
+        "username" : "admin",
+        "password" : "admin",
+        "database" : "jmxDB_metrics"
+      } ]
+    }
+    ]
+  } ]
+}
